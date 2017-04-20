@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <!--<link rel="stylesheet" type="text/css" href="theme4.css">-->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <!-- use this style for testing and development purposes -->
+    <style type="text/css">
+        .container {
+            border: 2px;
+        }
+        
+        .row {
+            border: 2px;
+        }
+        
+        .row [class*=' col-'] {
+            border: 2px;
+        }
+    </style>
+
+</head>
+
+<!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- hamburger button. do not touch! -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+      <a class="navbar-brand" href="#">
+          <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+          <i class="fa fa-telegram"></i>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- THIS UL HANDLES OUR LINKS -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://facebook.com">facebook</a></li>
+        <li><a href="http://facebook.com">facebook2</a></li>
+        <!-- to make more links, make some <li> in here -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+    <!--This container to hold everything-->
+    <div class="container">
+
+        <div class="row">
+            <!-- row 1: jumbotron -->
+
+            <div class="col-xs-12
+                     col-sm-12
+                     col-md-12
+                     col-lg-12">
+
+                <div class="jumbotron" style="background-image: url(http://flowersflowers.com.sg/wp-content/uploads/2016/06/banner1.jpg);
+                background-size: cover; height: 60vh;">
+                    <h1> Think of your loved ones</h1>
+                    <p>... <strong> </p>
+                 <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+                 <a href="http://stack.sg/" class="btn btn-primary"><h2> pick me<h2></a>
+            </div>
+        </div>
+    </div>
+    <!-- end of 1st row --> 
+<hr>
+    <!-- row2: thumbnails -->
+        <div class="row">
+              <div class="col-xs-12
+                          col-sm-4
+                          col-md-4
+                          col-lg-4"> 
+        
+                    <div class="thumbnail">
+                        <img src="http://flowersflowers.com.sg/wp-content/uploads/2016/07/TA26.png">
+                        <div class="caption">
+                            <h3>Beautiful</h3>
+                        <p> 
+                            From: $100.00
+                            QUICK OVERVIEW
+
+                            20 Stalks of Red Super Rose with Red Hypericum, Baby’s Breath and Statice in Vase
+                        </p>
+                        </div>
+
+                    </div>  <!-- end of thumbnail --> 
+        </div>
+
+         <div class="row">
+              <div class="col-xs-12
+                          col-sm-4
+                          col-md-4
+                          col-lg-4"> 
+        
+                    <div class="thumbnail">
+                        <img src="http://flowersflowers.com.sg/wp-content/uploads/2016/07/HB-R14-Gracious.png">
+                        <div class="caption">
+                            <h3>Gracious</h3>
+                        <p> 
+                            From: $50.00
+                            QUICK OVERVIEW
+
+                            6 stalk Champagne Rose with Sweet William, Forget Me Not, Baby’s Breath in princess style wrappers
+                        </p>
+                        </div>
+
+                    </div>  <!-- end of thumbnail --> 
+        </div>
+
+        <div class="row">
+              <div class="col-xs-12
+                          col-sm-4
+                          col-md-4
+                          col-lg-4"> 
+        
+                    <div class="thumbnail">
+                        <img src="http://flowersflowers.com.sg/wp-content/uploads/2016/06/FIV104.png">
+                        <div class="caption">
+                            <h3>Exotic</h3>
+                        <p> 
+                            From: $78.00
+                            QUICK OVERVIEW
+
+                            10 stalks white super rose. exotic mix, sweet william with eustoma
+                        </p>
+                        </div>
+
+                    </div>  <!-- end of thumbnail --> 
+        </div>
+
+<hr>
+<!-- row3 - video -->
+      <div class="row">
+              <div class="col-xs-12
+                          style="padding:=0";> 
+
+                      <div class="embed-responsive embed-responsive-16by9">
+                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HP4KxKEJFyE" allowfullscreen=""></iframe>
+                      </div>
+              </div>
+     </div>
+<hr>
+
+</div>
+    
+<!-- row4 : form + text -->
+    <div class="row">
+       <div class="col-xs-12
+                   col-sm-6
+                   col-md-6
+                   col-lg-6"> 
+
+            <div class="panel panel-default" style="margin-left: 2rem">
+                <div class="panel-body">
+
+                    <form action="https://coderinyou-1332.appspot.com/submit" method="post"> 
+                        <legend>My Form</legend>
+                        <div class="form-group">
+                           <label for="name-id"> Name </label>
+                           <input type="text" id="name-id" class="form-control"
+                           type="text" name="Name">
+                        </div>
+
+                        <div class="form-group">
+                           <label for="email-id"> Email </label>
+                           <input type="email" id="email-id" class="form-control"
+                           type="text" name="email">
+                        </div>
+
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="payment" value="payment-id 1">Cash
+                    </label>
+                </div>
+
+                 <div class="radio">
+                    <label>
+                        <input type="radio" name="payment" value="payment-id 2">Credit Card
+                    </label>
+                 </div>
+
+                  <div class="radio">
+                    <label>
+                        <input type="radio" name="payment" value="payment-id 2">Paypal
+                    </label>
+                  </div>
+
+                  <input type="submit" class="btn btn-button" >
+              
+                        
+                     </form>
+
+                </div>
+            </div>
+      </div>
+      <div class="col-xs-12
+                  col-sm-6
+                  col-md-6
+                  col-lg-6">
+                  <p>
+                        
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit natus veritatis, deserunt consequuntur, eius repellat nisi, accusamus assumenda expedita sequi, doloribus nemo exercitationem. Iure est, voluptas ipsam. Sapiente adipisci, at?
+                  </p>
+      </div>
+    </div>
+
+    <!-- row5 table --> 
+        
+    <div class="row">
+
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+
+                  <div class="panel panel-default">
+                      <div class="panel-body">
+                            
+                             <table class="table table-striped"> 
+           
+                                 <h3 class="text-center">Opening Hours</h3>
+                
+                                    <tr>
+                                            <th>  Day  </th>
+                                            <th>  Hours  </th>  
+                                            
+                                    </tr>
+
+                                    <tr>
+                                            <td> Monday to Thursday </td>  
+                                            <td> 9am - 5pm </td>
+                                            
+                                    </tr>
+
+                                    <tr>
+                                            <td> Friday and Saturday </td>  
+                                            <td> 11pm - 3AM </td>
+                                            
+                                    </tr>
+
+                                    <tr>
+                                            <td> Sunday </td>  
+                                            <td> Closed </td>
+                                            
+                                    </tr>
+                                    
+                                </table>
+                      </div>
+                  </div>
+        </div>
+   
+
+    <!--<div class="row"> -->
+              <div class="col-xs-12
+                          col-sm-4
+                          col-md-4
+                          col-lg-4"> 
+
+                    <div class="embed-responsive embed-responsive-4by3">
+                         <iframe class="embed-responsive-item" src="https://goo.gl/zdHdhc"></iframe>
+                    </div>
+  
+              </div>
+
+              <div class="col-xs-12
+                          col-sm-4
+                          col-md-4
+                          col-lg-4"> 
+                                <legend>Contact me </legend>
+                     
+                            <div class="list-group">
+                                   <a href="#" class="list-group-item"><i class="fa fa-phone fa-fw" aria-hidden="true"></i> +65 123 456 789</a>
+                                   <a href="#" class="list-group-item"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> hello@meet.me</a>
+                                   <a href="#" class="list-group-item"><i class="fa fa-telegram fa-fw" aria-hidden="true"></i> t.me/frank</a>
+                            </div>
+                            
+              </div>
+    </div>
+    <!-- end of row 5 -->
+
+    <hr>
+
+    <!-- row5: social media-->
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="list-inline text-center">
+                    <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-snapchat fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google fa-2x"></i></a></li>      
+            </ul>
+        </div>
+    </div>
+
+
+<!-- jquery -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+<script>new WOW().init();</script>
+</body>
+</html>
